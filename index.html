@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My SPA</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+
+  <!-- ─── App Shell ──────────────────────────────────────────────────────────
+       This is the only HTML file. The <nav> stays fixed; only #app changes.
+  ──────────────────────────────────────────────────────────────────────────── -->
+
+  <header>
+    <nav>
+      <a href="#/">Home</a>
+      <a href="#/about">About</a>
+      <a href="#/contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Every "page" is rendered into this single container -->
+  <main id="app">
+    <p>Loading…</p>
+  </main>
+
+  <!-- ES modules: the browser handles imports, no bundler needed -->
+  <script type="module" src="src/app.js"></script>
+
+</body>
+</html>
